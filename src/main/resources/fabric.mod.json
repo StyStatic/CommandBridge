@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "commandbridge",
+  "version": "${version}",
+  "name": "CommandBridge",
+  "description": "",
+  "authors": [
+    "StyStatic"
+  ],
+  "contact": {
+    "website": "stystatic.tech"
+  },
+  "license": "MIT",
+  "icon": "assets/commandbridge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tech.stystatic.commandbridge.client.CommandBridgeClient"
+    ],
+    "main": [
+      "tech.stystatic.commandbridge.CommandBridge"
+    ]
+  },
+  "mixins": [
+    "commandbridge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
